@@ -23,5 +23,8 @@ class UserServiceImpl {
         const [victim] = this.users.splice(index, 1);
         return victim;
     }
+    getAllAddress() {
+        return this.users.map(user => ({ zipCode: user.zipCode, city: user.city }));
+    }
 }
 exports.UserServiceImpl = UserServiceImpl;

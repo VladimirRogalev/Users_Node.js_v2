@@ -21,6 +21,11 @@ class UserController {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify(users));
     }
+    getAllAddress(req, res) {
+        const users = this.userService.getAllAddress();
+        res.writeHead(200, { 'Content-Type': 'application/json' });
+        res.end(JSON.stringify(users));
+    }
     removeUser(req, res) {
         return __awaiter(this, void 0, void 0, function* () {
             const body = yield (0, parseBody_1.parseBody)(req);
@@ -38,7 +43,7 @@ class UserController {
             const body = yield (0, parseBody_1.parseBody)(req);
             const isSuccess = this.userService.addUser(body);
             if (isSuccess) {
-                eventEmitter_1.eventEmitter.emit('userAdded', body.name);
+                eventEmitter_1.eventEmitter.emit('userAdded', body.name, body.city);
                 res.writeHead(200, { 'Content-Type': 'text/plain' });
                 res.end('User added');
             }

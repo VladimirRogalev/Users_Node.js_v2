@@ -25,4 +25,10 @@ export class UserServiceImpl implements UserService {
         return victim;
     }
 
+    getAllAddress(): { zipCode: number; city: string }[] {
+        return this.users.map(user => ({zipCode: user.zipCode, city: user.city}));
+    }
+
+
+
 }

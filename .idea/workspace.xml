@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2aa22909-cb39-4b47-ad10-b1454656e36f" name="Changes" comment="v2 init">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="2aa22909-cb39-4b47-ad10-b1454656e36f" name="Changes" comment="Initial project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/controllers/UserController.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/controllers/UserController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/events/eventEmitter.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/events/eventEmitter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/routes/userRoutes.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/routes/userRoutes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/services/UserServiceImpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/services/UserServiceImpl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/UserController.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/UserController.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/events/eventEmitter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/events/eventEmitter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/userRoutes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/userRoutes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/UserService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/UserServiceImpl.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UserServiceImpl.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Java-56_BackEnd_Nodejs/04_hw_event_emitter_v2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -55,7 +67,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "editor.preferences.inline.completion",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Java-56_BackEnd_Nodejs\\04_hw_event_emitter_v2\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -89,6 +101,7 @@
       <workItem from="1733583848482" duration="1351000" />
       <workItem from="1733585214466" duration="94000" />
       <workItem from="1733585418723" duration="466000" />
+      <workItem from="1733585917167" duration="5077000" />
     </task>
     <task id="LOCAL-00001" summary="v2 init">
       <option name="closed" value="true" />
@@ -98,7 +111,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733584907289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial project">
+      <option name="closed" value="true" />
+      <created>1733586139921</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1733586139921</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +141,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="v2 init" />
-    <option name="LAST_COMMIT_MESSAGE" value="v2 init" />
+    <MESSAGE value="Initial project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial project" />
   </component>
 </project>

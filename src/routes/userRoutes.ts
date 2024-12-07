@@ -9,6 +9,10 @@ export const userRoutes = async (req: IncomingMessage, res: ServerResponse, cont
             controller.getUsers(req, res);
             break;
         }
+        case '/api/users/address' + 'GET' : {
+            controller.getAllAddress(req, res);
+            break;
+        }
         case '/api/users' + 'DELETE': {
             await controller.removeUser(req, res);
             break;

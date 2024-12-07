@@ -17,6 +17,10 @@ const userRoutes = (req, res, controller) => __awaiter(void 0, void 0, void 0, f
             controller.getUsers(req, res);
             break;
         }
+        case '/api/users/address' + 'GET': {
+            controller.getAllAddress(req, res);
+            break;
+        }
         case '/api/users' + 'DELETE': {
             yield controller.removeUser(req, res);
             break;

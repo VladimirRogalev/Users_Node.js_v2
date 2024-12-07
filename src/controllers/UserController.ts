@@ -12,11 +12,18 @@ export class UserController {
         this.userService = userService;
     }
 
-    getUsers(req: IncomingMessage, res:ServerResponse){
-    const users = this.userService.getUsers();
-    res.writeHead(200, {'Content-Type': 'application/json'});
-    res.end(JSON.stringify(users));
-}
+    getUsers(req: IncomingMessage, res: ServerResponse) {
+        const users = this.userService.getUsers();
+        res.writeHead(200, {'Content-Type': 'application/json'});
+        res.end(JSON.stringify(users));
+    }
+
+    getAllAddress(req: IncomingMessage, res: ServerResponse) {
+        const users = this.userService.getAllAddress();
+        res.writeHead(200, {'Content-Type': 'application/json'});
+        res.end(JSON.stringify(users));
+    }
+
     async removeUser(req: IncomingMessage, res: ServerResponse) {
         const body = await parseBody(req);
         const victim = this.userService.removeUser((body as { id: number }).id);
@@ -27,11 +34,12 @@ export class UserController {
         res.writeHead(200, {'Content-Type': 'application/json'});
         res.end(JSON.stringify(users));
     }
-    async addUser (req: IncomingMessage, res: ServerResponse) {
+
+    async addUser(req: IncomingMessage, res: ServerResponse) {
         const body = await parseBody(req);
         const isSuccess = this.userService.addUser(body as User);
-        if(isSuccess) {
-            eventEmitter.emit('userAdded', (body as User).name);
+        if (isSuccess) {
+            eventEmitter.emit('userAdded', (body as User).name, (body as User).city );
             res.writeHead(200, {'Content-Type': 'text/plain'});
             res.end('User added');
         } else {
